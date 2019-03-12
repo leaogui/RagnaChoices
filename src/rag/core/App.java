@@ -1,6 +1,5 @@
 package rag.core;
 
-import java.util.Scanner;
 
 public class App {
 

@@ -17,6 +17,11 @@ public class ManipulacaoArquivos {
 		
 		File arq = new File(Local);
 		
+		if(!arq.exists()) {
+			
+			
+		
+		
 			BufferedWriter escrever;
 			try {
 				escrever = new BufferedWriter(new FileWriter(arq));
@@ -33,7 +38,14 @@ public class ManipulacaoArquivos {
 			}
 			
 	
+		}
+		else {
+			
+			System.out.println("O arquivo já existe, próximo passo.");
+		}
 	}
+	
+	
 	
 	
 	

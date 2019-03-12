@@ -12,22 +12,7 @@ public class Controller {
 	  
 	  
 	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+	 
 	  
 	  
 	  
