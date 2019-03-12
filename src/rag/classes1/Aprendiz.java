@@ -17,27 +17,6 @@ public class  Aprendiz {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	// Getters e Setters
 	
 	
