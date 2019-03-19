@@ -1,5 +1,6 @@
 package rag.testes;
 
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,34 +9,23 @@ import rag.classes2.Sabio;
 public class Testes {
 
 	
-	static Sabio teste = new Sabio();
-
 	
+	@Test 
 	
-	@Test
-	public static void testao() {
+	void funcionaInte() {
 		
+		int intTeste = 50;
+		
+		Sabio teste = new Sabio();
 		
 		teste.setInte(50);
 		
 		
-		teste.getInte();
-		
-	
-			
+		assertEquals(intTeste, teste.getInte());
 		
 	
 	}
 	
 
-
-
-	public static void main (String [] args) {
 	
-	testao();
-	 
-	System.out.println(""+teste.getInte());
-	
-}
-
 }
