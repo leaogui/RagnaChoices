@@ -20,25 +20,10 @@ public class ManipulacaoArquivos {
 		if(!arq.exists()) {
 			
 			
+		this.escreverTxt(arq);
 		
-		
-			BufferedWriter escrever;
-			try {
-				escrever = new BufferedWriter(new FileWriter(arq));
-				
-				escrever.flush();
-				
-				escrever.write("Teste");
-				
-				escrever.close();
-				
-			} catch (IOException e) {
-				
-				e.printStackTrace();
-			}
-			
-	
 		}
+		
 		else {
 			
 			System.out.println("O arquivo já existe, próximo passo.");
@@ -49,10 +34,26 @@ public class ManipulacaoArquivos {
 	
 	
 	
-	public void escreverTxt() {
+	public void escreverTxt(File arq) {
 		
 		
+		BufferedWriter escrever;
+		try {
+			escrever = new BufferedWriter(new FileWriter(arq));
+			
+			escrever.flush();
+			
+			escrever.write("Teste");
+			
+			escrever.close();
+			
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
 		
+
+	}
 		
 		
 		
@@ -61,6 +62,5 @@ public class ManipulacaoArquivos {
 		
 	}
 	
-	
 
-}
+
