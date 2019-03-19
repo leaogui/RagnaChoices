@@ -47,9 +47,9 @@ public class ManipulacaoArquivos {
 			
 			escrever.close();
 			
-		} catch (IOException e) {
+		} catch (IOException erro) {
 			
-			e.printStackTrace();
+			erro.printStackTrace();
 		}
 		
 

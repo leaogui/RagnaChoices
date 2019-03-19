@@ -2,6 +2,8 @@ package rag.core;
 
 import java.util.Scanner;
 
+
+
 public class Controller {
 	
 	
@@ -12,12 +14,8 @@ public class Controller {
 	  
 	  
 	  
-	 
-	  
-	  
-	  
 	 public void começoApp() {
-	
+
 	int escolhaMain;
 	
 	 System.out.println("\nBem vindo ao programa de seleção de classe Ragnarök Online");
