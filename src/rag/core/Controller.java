@@ -7,15 +7,21 @@ import java.util.Scanner;
 public class Controller {
 	
 	
-	  static Scanner sc = new Scanner(System.in);
-	 
-	  static ManipulacaoArquivos arqs = new ManipulacaoArquivos();
+	
+	public Controller(Creator criador) {
+		
+		this.criador = criador;
+	}
 	  
-	  
+	 Creator criador;
 	  
 	  
 	 public void começoApp() {
-
+		 
+	ManipulacaoArquivos arqs = criador.newManip();	
+			
+	Scanner sc = criador.newScan();
+		 
 	int escolhaMain;
 	
 	 System.out.println("\nBem vindo ao programa de seleção de classe Ragnarök Online");
@@ -24,13 +30,13 @@ public class Controller {
 
     escolhaMain = sc.nextInt();
 	
-    this.escolhaMain(escolhaMain);
+    this.escolhaMain(escolhaMain, arqs);
     
 	 }
  
 	 
 	 
-	 public void escolhaMain(int escolha) {
+	 public void escolhaMain(int escolha, ManipulacaoArquivos arqs) {
 		 
 	
 		switch(escolha) {
